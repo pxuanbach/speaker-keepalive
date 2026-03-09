@@ -1,4 +1,4 @@
-# Marshall Acton III Keep Alive
+# Bluetooth Speaker Keep Alive
 
 ## Purpose/Reasoning
 
@@ -21,21 +21,6 @@ This project is _incredibly simple_.  What it does is sending a tone, 5Mhz, ever
 is intended to run on a consistent basis (whether the device is connected, or not).  If the device isn't connected,
 the tone simply doesn't play.  Otherwise, it does.  If you disconnect, and reconnect, it will automatically
 resume.
-
-## How to Run (Using distributables provided)
-
-1. Go to the releases (on the ride side)
-2. Download the relevant release (see table below)
-3. Unzip the file you downloaded
-4. Run the `marshall-keepalive` program (from command line)
-
-### Releases
-| Filename | Architecture | OS |
-|----------|--------------|----|
-| marshall-keepalive-windows.zip | x86 | Windows |
-| marshall-keepalive-osx86.zip | x86 | OSX |
-| marshall-keepalive-osx.zip | aarch64 | OSX |
-| marshall-keepalive-linux.zip | x86 | Linux |
 
 ### OSX Special Considerations
 
@@ -72,5 +57,5 @@ Create your environment, install your requirements, then run the script.
 source .venv/bin/activate
 pip install -r requirements.txt
 
-python3 keepalive.py
+python3 main.py --help
 ```
