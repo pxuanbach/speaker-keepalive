@@ -18,3 +18,10 @@ clean:
 	rm -rf $(OUTPUT_DIR)
 
 .PHONY: build-all
+
+list:
+	python main.py list-devices
+
+name := "Speakers (Xiaomi Sound Outdoor)"
+keepalive:
+	python main.py play-tone --device $(name) --every 5
