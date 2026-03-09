@@ -23,5 +23,6 @@ list:
 	python main.py list-devices
 
 name := "Speakers (Xiaomi Sound Outdoor)"
+schedule := 300
 keepalive:
-	python main.py play-tone --device $(name) --every 5
+	python main.py play-tone --device $(name) --every $(schedule)
